@@ -4,7 +4,7 @@ from django.db import models
 from django.core.validators import RegexValidator
 
 
-class Pizzeria_name(models.Model):
+class Pizzeria(models.Model):
     pizzeria_name = models.CharField(max_length = 200, blank = False)
     street = models.CharField(max_length  = 400, blank=True)
     city = models.CharField(max_length = 400, blank = True)
@@ -16,4 +16,7 @@ class Pizzeria_name(models.Model):
     logo_image = models.ImageField(upload_to='pizzariaImages', blank=True, default='pizzariaImages/pizzalogl.png')
     email = models.EmailField(max_length = 245, blank = True)
     active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return "{}".format(self.pizzeria_name, self.city)
 
