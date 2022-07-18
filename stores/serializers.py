@@ -5,4 +5,4 @@ from .models import Pizzeria
 class PizzerraListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Pizzeria
-        fields = ['id', 'pizzeria_name', 'city', 'zip_code',]
+        fields = ['id', 'logo_image', 'pizzeria_name', 'city', 'zip_code', 'absolute_url']
