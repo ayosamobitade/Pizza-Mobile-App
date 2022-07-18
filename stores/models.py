@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 from django.core.validators import RegexValidator
 
+
 class Pizzeria_name(models.Model):
     pizzeria_name = models.CharField(max_length = 200, blank = False)
     street = models.CharField(max_length  = 400, blank=True)
