@@ -7,5 +7,5 @@ urlpatterns = [
     path('', views.PizzeriaListAPIView.as_view(), name = 'pizzeria_list'),
     path('<int:id>/', views.PizzeriaRetrieveAPIView.as_view(), name='pizzeria_detail'),
     path('create/', views.PizzeriaCreateAPIView.as_view(), name='pizzeria_create'),
-    path('update/', views.PizzeriaRetrieveUpdateView, name='pizzeria_update')
+    path('update/', views.PizzeriaRetrieveUpdateView, name='pizzeria_update'),
 ]
