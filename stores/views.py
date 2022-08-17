@@ -6,5 +6,5 @@ from .serializers import PizzerraListSerializer
 from .models import Pizzeria
 
 class PizzeriaListAPIView(generics.ListAPIView):
-    queryser = Pizzeria.objects.all()
+    queryset = Pizzeria.objects.all()
     serializer_class = PizzerraListSerializer
