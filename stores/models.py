@@ -10,7 +10,7 @@ class Pizzeria(models.Model):
     city = models.CharField(max_length = 400, blank = True)
     state = models.CharField(max_length = 2, null = True, blank = True)
     zip_code = models.IntegerField(blank=True, default = 0)
-    webiste = models.CharField(max_length = 420, blank = True)
+    website = models.CharField(max_length = 420, blank = True)
     phone_number = models.CharField(validators=[RegexValidator(regex=r'^\1?\d{9,10}$')], max_length= 10, blank = True)
     description = models.TextField(blank = True)
     logo_image = models.ImageField(upload_to='pizzariaImages', blank=True, default='pizzariaImages/pizzalogl.png')
