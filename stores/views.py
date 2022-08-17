@@ -15,3 +15,8 @@ class PizzeriaRetrieveAPIView(generics.RetrieveAPIView):
     serializer_class = PizzeriaDetailSerializer
 
 
+class PizzeriaCreateAPI(generics.CreateAPIView):
+    queryset = Pizzeria.objects.all()
+    serializer_class = PizzeriaDetailSerializer
+
+    
