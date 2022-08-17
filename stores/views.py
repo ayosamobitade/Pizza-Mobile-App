@@ -8,3 +8,5 @@ from .models import Pizzeria
 class PizzeriaListAPIView(generics.ListAPIView):
     queryset = Pizzeria.objects.all()
     serializer_class = PizzerraListSerializer
+
+
