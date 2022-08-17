@@ -18,5 +18,5 @@ class Pizzeria(models.Model):
     active = models.BooleanField(default=True)
 
     def __str__(self):
-        return "{}".format(self.pizzeria_name, self.city)
+        return "{}, {}".format(self.pizzeria_name, self.city)
 
