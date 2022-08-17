@@ -8,7 +8,7 @@ class PizzerraListSerializer(serializers.ModelSerializer):
         fields = ['id', 'logo_image', 'pizzeria_name', 'city', 'zip_code', 'absolute_url']
 
 
-class PizzariaDetailSerializer(serializers.ModelSerializer):
+class PizzeriaDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Pizzeria
         fields = [
